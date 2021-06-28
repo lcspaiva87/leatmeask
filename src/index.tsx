@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-
 import { App } from './App';
-
+import './styled/global.scss'
+import './services/firebase'
 
 ReactDOM.render(
   <React.StrictMode>
