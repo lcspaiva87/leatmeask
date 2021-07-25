@@ -1,17 +1,17 @@
 
 import { useHistory } from 'react-router-dom'
-
-
 import illustrationImg from '../assets/images/illustration.svg';
 import logoImg from '../assets/images/logo.svg'
 import googleImg from '../assets/images/google-icon.svg';
 import '../styled/auth.scss'
+//import { notification } from 'antd';
 import { Button } from '../components/Button/Button';
 
 import { useAuth } from '../hooks/useAuth';
 import { FormEvent, useState } from 'react';
 import { database } from '../services/firebase';
 import '../styled/room.scss'
+import toast, { Toaster } from 'react-hot-toast';
 export function Home() {
   const history = useHistory();
   const { user, signInWithGoogle } = useAuth()
@@ -28,13 +28,25 @@ export function Home() {
     event.preventDefault()
 
     if (roomCode.trim() === '') {
-      return;
+      return (
+        <Toaster
+          position="top-right"
+          reverseOrder={true}
+        />
+
+      )
     }
     const roomRef = await database.ref(`rooms/${roomCode}`).get()
 
     if (!roomRef.exists()) {
-      alert('Room does not exists')
-      return;
+      try {
+
+      } catch (error) {
+
+        alert("error")
+        return;
+      }
+
     }
     history.push(`rooms/${roomCode}`)
   }

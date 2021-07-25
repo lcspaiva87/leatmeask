@@ -1,0 +1,53 @@
+[33mcommit 7a80271e099a0a687ecb461edc7447f665a50a86[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: lcspaiva87 <lcspaiva87@gmail.com>
+Date:   Sat Jul 24 18:22:54 2021 -0300
+
+    update new Roomws :books:
+
+[33mcommit a333494442caecde7863b2a3c0b36767ebcac9f7[m
+Author: lcspaiva87 <lcspaiva87@gmail.com>
+Date:   Sat Jul 17 21:40:54 2021 -0300
+
+    input bug fix
+
+[33mcommit 4d2d4b221a44fa18a3398303822db50749961c99[m
+Author: lcspaiva87 <lcspaiva87@gmail.com>
+Date:   Mon Jun 28 16:42:29 2021 -0300
+
+    hook de autenticação
+
+[33mcommit 0c1c3ed73567887d8b615c533683637fdc0c042e[m
+Author: lcspaiva87 <lcspaiva87@gmail.com>
+Date:   Mon Jun 28 14:05:41 2021 -0300
+
+    Router :round_pushpin:
+
+[33mcommit fef0fa8af9c2335ad735e848c7d9f3cce36974c2[m
+Author: lcspaiva87 <lcspaiva87@gmail.com>
+Date:   Mon Jun 28 13:37:34 2021 -0300
+
+    NemRoom :pushpin:
+
+[33mcommit 890784ae86e3d36f0ba04102f98a2456e8e5bfab[m
+Author: lcspaiva87 <lcspaiva87@gmail.com>
+Date:   Mon Jun 28 02:16:40 2021 -0300
+
+    home component :page_with_curl:
+
+[33mcommit 8df3f7b56e3251190020a057da4a4a348f4ef661[m
+Author: lcspaiva87 <lcspaiva87@gmail.com>
+Date:   Thu Jun 24 03:37:22 2021 -0300
+
+    creation of firebase configuration file
+
+[33mcommit 517a7670e601962ff34fe310e1f15e8198f359fa[m
+Author: lcspaiva87 <lcspaiva87@gmail.com>
+Date:   Thu Jun 24 02:52:38 2021 -0300
+
+    clear app
+
+[33mcommit b333afebc89d568191cb45ab1cfab6091326cc90[m
+Author: lcspaiva87 <lcspaiva87@gmail.com>
+Date:   Thu Jun 24 02:28:07 2021 -0300
+
+    Initialize project using Create React App

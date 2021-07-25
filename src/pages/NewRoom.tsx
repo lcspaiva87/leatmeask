@@ -7,6 +7,7 @@ import { Button } from '../components/Button/Button';
 import { useState } from 'react';
 import { database } from '../services/firebase';
 import { useAuth } from '../hooks/useAuth';
+
 //import { useAuth } from '../../hooks/useAuth';
 
 export function NewRoom() {
@@ -16,6 +17,7 @@ export function NewRoom() {
 
   async function handleCreateRoom(event: FormEvent) {
     event.preventDefault()
+
     if (newRoom.trim() === '') {
       return;
     }
@@ -25,7 +27,9 @@ export function NewRoom() {
       title: newRoom,
       authorId: user?.id,
     })
-    history.push(`/rooms/${firebaseRoom.key}`)
+    history.push(`/rooms/${firebaseRoom.key}`);
+
+
   }
   return (
     <div id="page-auth">
