@@ -2,12 +2,11 @@ import { useHistory } from "react-router-dom";
 import { FormEvent } from "react";
 import { useState } from "react";
 
-import illustrationImg from "../assets/images/illustration.svg";
-import logoImg from "../assets/images/logo.svg";
-import googleIconImg from "../assets/images/google-icon.svg";
-
-import { Button } from "../components/Button";
-import "../styled/auth.scss";
+import illustrationImg from "../assets/illustration.svg";
+import logoImg from "../assets/logo.svg";
+import googleIconImg from "../assets/google-icon.svg";
+import { Button } from "../components/button";
+import "../styles/auth.scss";
 import { useAuth } from "../hooks/useAuth";
 import { database } from "../services/firebase";
 
@@ -20,6 +19,7 @@ export function Home() {
     if (!user) {
       await signInWithGoogle();
     }
+
     history.push("/rooms/new");
   }
   async function handleJoinRoom(event: FormEvent) {
